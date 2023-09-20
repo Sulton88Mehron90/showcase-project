@@ -5,9 +5,11 @@ import './App.css';
 
 function App() {
   const [flashcards, setFlashcards] = useState([]);
-  const [categories, setCategories] = useState([])
+  const [categories, setCategories] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    setLoading(true);
     getTrivia()
       .then(data => {
         const formattedQuestions = data.results.map((rawQuestion, index) => {
@@ -23,7 +25,8 @@ function App() {
           };
         });
         setFlashcards(formattedQuestions);
-        console.log(formattedQuestions);  //console.log
+        console.log(formattedQuestions);  //console.log dont forget to remove
+        setLoading(false);
       })
       .catch(error => {
         console.error('There was an error fetching trivia questions:', error);
@@ -32,7 +35,7 @@ function App() {
   
 
   return (
-    <FlashcardContainer flashcards={flashcards} />
+      loading ? <div>Loading...</div> : <FlashcardContainer flashcards={flashcards} />
   );
 }
 

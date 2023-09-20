@@ -1,70 +1,129 @@
-# Getting Started with Create React App
+<div>
+    <h1 style="color:red; display: inline;">
+      Avicenna Method
+      <img src="https://github.com/Sulton88Mehron90/rancid-tomatillos-denzel-parvin/blob/Feat/videos/src/images/Tomatillo.png" 
+         alt="Rancid Tomatillos Logo" 
+         width="50" 
+         style="vertical-align: middle; display: inline;" />
+    </h1>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 🔖 Description
 
-## Available Scripts
+<!-- Welcome to Rancid Tomatillos, your go-to platform for all things cinema! Browse our extensive library of movies, delve into detailed information on each film, and even watch trailers. Use the search feature to find movies that pique your interest, or filter films based on ratings to discover hidden gems. -->
 
-In the project directory, you can run:
+---
+### 👁️‍🗨️ Preview of App
+<!-- ![Rancid Tomatillos](https://github.com/Sulton88Mehron90/rancid-tomatillos-denzel-parvin/blob/main/src/images/Rancid-Tomatillos.gif) -->
 
-### `npm start`
+--- 
+### 🌐 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- [Open the app here](https://rancid-tomatillos-denzel-parvin.vercel.app/) -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+### 🧱 Technologies Used 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<div>  
+  <a href="https://www.javascript.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="50" /></a>  
+  <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" height="50" /></a>  
+  <a href="https://www.w3schools.com/css/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" height="50" /></a>  
+  <a href="https://nodejs.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg" alt="Node.js" height="50" /></a>  
+  <a href="https://github.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg" alt="Git" height="50" /></a>  
+  <a href="https://react.dev/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" height="50" /></a>  
+  <a href="https://docs.cypress.io/guides/overview/why-cypress" target="_blank"><img style="margin: 10px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoXfntUBC8eXPGA7V8dQp74I5Xofeze3tnRua5hKQkd0ofyH0cy5mJm3_Y-zPhHO2ty9k&usqp=CAU" alt="Cypress" height="50" /></a>  
+</div>
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🕹️ Installation & Setup 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Clone this repository to your local machine using the command: `git clone git@github.com:Sulton88Mehron90/rancid-tomatillos-denzel-parvin.git`
+- Run the command: `cd rancid-tomatillos`
+- Run the command: `npm install`
+- Run the command: `npm start`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### 🌱 Learning Goals
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The primary objectives of this project are as follows:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### React Fundamentals
+- Gain a strong competency in React fundamentals and apply these skills to create an effective, functional, and user-friendly application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Testing with Cypress
+- Achieve proficiency in writing reliable tests for React components and asynchronous JavaScript functions using Cypress for end-to-end testing.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Code Refactoring and Quality
+- Engage in regular code refactoring exercises to improve code quality, readability, maintainability, and overall performance.
 
-## Learn More
+### Multi-Page User Interface
+- Utilize React Router to design a multi-page user experience with seamless navigation, dynamic routing, and conditional rendering.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### API Integration and Data Handling
+- Learn to integrate APIs to fetch data, handle network requests efficiently, manage state, and implement error-handling mechanisms.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### 🤝🏼 Contributors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<table>
+    <tr>
+        <td> Parvin A. Sattorova 
+            <a href="https://www.linkedin.com/in/parvin-sattorova-edwards-357526b3/">LinkedIn</a> || 
+            <a href="https://github.com/Sulton88Mehron90">GitHub</a> 
+        </td>
+    </tr>
+    <tr>
+        <td><img src="https://avatars.githubusercontent.com/u/119267809?v=4" alt="GitHub Avatar" width="150"></td>
+    </tr>
+</table>
 
-### Analyzing the Bundle Size
+<!-- <table>
+    <tr>
+        <td> Parvin A. Sattorova 
+            <a href="https://www.linkedin.com/in/parvin-sattorova-edwards-357526b3/">LinkedIn</a> || 
+            <a href="https://github.com/Sulton88Mehron90">GitHub</a> 
+        </td>
+        <td><img src="https://github.com/Sulton88Mehron90/rancid-tomatillos-denzel-parvin/blob/Feat/videos/src/images/Tomatillo.png" alt="Rancid Tomatillos Logo" width="50" style="vertical-align:middle"/></td>
+    </tr>
+    <tr>
+        <td><img src="https://avatars.githubusercontent.com/u/119267809?v=4" alt="GitHub Avatar" width="150"></td>
+    </tr>
+</table> --> 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+### ✨ Context, Wins, and Challenges
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- ### Context
+Embarking on this collaborative venture to create this application was both thrilling and educational. Utilizing React, we laid the groundwork for an interactive and dynamic UI. JavaScript enabled us to introduce complex functionalities, making the app not just visually appealing but also functional.
 
-### Advanced Configuration
+HTML and CSS served as the building blocks for our app's sleek design and intuitive user experience. Their synergistic power contributed to the creation of an application that is both visually stunning and user-friendly.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The integration of Cypress, an industry-standard testing framework, ensured that our application meets quality benchmarks. This enabled us to automate tests, guaranteeing that the app performs optimally across various browsers and devices.
 
-### Deployment
+ <h4>
+    <img src="https://github.com/Sulton88Mehron90/rancid-tomatillos-denzel-parvin/blob/Feat/videos/src/images/redTomato.png" 
+         alt="Red Tomato Logo" 
+         style="width: 30px; margin-right: 10px; border: 2px solid rgb(11, 166, 52); border-radius: 50%; padding: 8px; transition: transform 0.3s ease, box-shadow 0.3s ease-in-out; transform-origin: right; vertical-align: middle;" />
+    Major Wins
+  </h4>
+  
+- One of the most significant achievements was the effective teamwork. Our combined skills and effective communication facilitated a smooth development process, culminating in an application that not only meets but exceeds user expectations.
+- Achieved a visually pleasing design for the app.
+- Successfully implemented search and dynamic trailer fetching for each movie.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<h4>
+  <img src="https://github.com/Sulton88Mehron90/rancid-tomatillos-denzel-parvin/blob/Feat/videos/src/images/redTomato.png" 
+       alt="Red Tomato Logo" 
+       style="width: 30px; margin-right: 10px; border: 2px solid rgb(11, 166, 52); border-radius: 50%; padding: 8px; transition: transform 0.3s ease, box-shadow 0.3s ease-in-out; transform-origin: right; vertical-align: middle;" />
+  Challenges
+</h4>
 
-### `npm run build` fails to minify
+- Conducting end-to-end testing using Cypress posed some hurdles.
+- Implementing robust error handling was a complex but necessary part of the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+--- -->
