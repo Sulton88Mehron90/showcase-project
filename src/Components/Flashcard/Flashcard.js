@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Flashcard.css';
-import '../App/App.css';
 
 export default function Flashcard({ flashcard }) {
   const [flip, setFlip] = useState(false);

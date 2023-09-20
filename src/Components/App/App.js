@@ -3,7 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import FlashcardContainer from '../FlashcardContainer/FlashcardContainer';
 import HomePage from '../HomePage/HomePage';
 import { getTrivia } from '../../ApiCalls';
-import './App.css';
+// import './App.css';
 
 function App() {
   const [flashcards, setFlashcards] = useState([]);
