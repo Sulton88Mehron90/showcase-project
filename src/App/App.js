@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
 import FlashcardContainer from '../FlashcardContainer/FlashcardContainer';
 import { getTrivia } from '../ApiCalls';
 import './App.css';
@@ -33,10 +34,13 @@ function App() {
       });
   }, []);
   
-
   return (
-      loading ? <div>Loading...</div> : <FlashcardContainer flashcards={flashcards} />
+    <Routes>
+      <Route path="/" element={<div>Welcome to the Home Page. <Link to="/flashcards">Go to Flashcards</Link></div>} />
+      <Route path="/flashcards" element={loading ? <div>Loading...</div> : <FlashcardContainer flashcards={flashcards} />} />
+    </Routes>
   );
 }
+
 
 export default App;
