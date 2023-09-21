@@ -74,47 +74,20 @@ export default function App() {
       });
   };  
 
-  // function handleError(error) {
-  //   if (error.message === '500') {
-  //     setError('500');
-  //   } else if (error.message === '404') {
-  //     setError('404');
-  //   } else {
-  //     setError('Other');
-  //   }
-  //   setIsLoading(false);
-  // }
+  function handleError(error) {
+    if (error.message === '500') {
+      setError('500');
+    } else if (error.message === '404') {
+      setError('404');
+    } else {
+      setError('Other');
+    }
+    setIsLoading(false);
+  }
 
   if (loading) {
     return <div className="loading"><div className="spinner"></div></div>;
   }
-
-//   return (
-//     <div>
-//       <form className="header" onSubmit={handleSubmit}>
-//         <div className="form-group">
-//           <label htmlFor="category">Category</label>
-//           <select id="category" value={selectedCategory} onChange={(e) => setSelectedCategory(e.target.value)}>
-//             {categories.map(category => {
-//               return <option value={category.id} key={category.id}>{category.name}</option>
-//             })}
-//           </select>
-//         </div>
-//         <div className="form-group">
-//           <label htmlFor="amount">Number of Questions</label>
-//           <input type="number" id="amount" min="1" step="1" defaultValue={10} onChange={(e) => setNumberOfQuestions(e.target.value)} />
-//         </div>
-//         <div className="form-group">
-//           <button className="btn">Generate</button>
-//         </div>
-//       </form>
-//       <Routes>
-//         <Route path="/" element={<HomePage />} />
-//         <Route path="/flashcards" element={loading ? <div>Loading...</div> : <FlashcardContainer flashcards={flashcards} />} />
-//       </Routes>
-//     </div>
-//   );
-// }
 
 return (
     <div>

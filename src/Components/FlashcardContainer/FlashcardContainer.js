@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Flashcard from '../Flashcard/Flashcard';
 import { Link } from 'react-router-dom';
-import Loading from '../ErrorComponent/Loading';
 
 import '../Flashcard/Flashcard.css';
 
@@ -26,9 +25,6 @@ export default function FlashcardContainer({ flashcards, loading, categories, se
           <button className="btn">Generate</button>
         </div>
       </form>
-
-      {/* Conditionally render the Loading component if loading is true */}
-      {loading && <Loading />}
 
       <div className='card-grid'>
         {flashcards.map(flashcard => {
