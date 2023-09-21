@@ -51,8 +51,6 @@ export default function FlashcardContainer({ flashcards, loading, categories, se
   );
 }
 
-
-
 FlashcardContainer.propTypes = {
   flashcards: PropTypes.arrayOf(
     PropTypes.shape({
