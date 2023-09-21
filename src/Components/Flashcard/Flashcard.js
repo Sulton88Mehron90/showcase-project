@@ -26,9 +26,7 @@ export default function Flashcard({ flashcard }) {
   console.log("Flashcard object:", flashcard);  // dont forget to delete this console
   
   return (
-    <div className={`card ${flip ? 'flip' : ''}`}
-      onClick={() => setFlip(!flip)}
-    >
+    <div className={`card ${flip ? 'flip' : ''}`} style={{ height: `${height}px` }} onClick={() => setFlip(!flip)}>
       {/* <div className='front'> */}
       <div className="front" ref={frontEl}>
         {flashcard.question}
