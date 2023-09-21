@@ -11,6 +11,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState("");
   const [numberOfQuestions, setNumberOfQuestions] = useState(10);
+  const [error, setError] = useState(null);
 
 
   useEffect(() => {
@@ -82,7 +83,7 @@ export default function App() {
     } else {
       setError('Other');
     }
-    setIsLoading(false);
+    setLoading(false);
   }
 
   if (loading) {
