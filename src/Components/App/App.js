@@ -11,7 +11,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState("");
   const [numberOfQuestions, setNumberOfQuestions] = useState(10);
-
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     setLoading(true);
@@ -74,6 +74,24 @@ export default function App() {
       });
   };  
 
+<<<<<<< HEAD
+=======
+  function handleError(error) {
+    if (error.message === '500') {
+      setError('500');
+    } else if (error.message === '404') {
+      setError('404');
+    } else {
+      setError('Other');
+    }
+    setLoading(false);
+  }
+
+  if (loading) {
+    return <div className="loading"><div className="spinner"></div></div>;
+  }
+
+>>>>>>> main
 return (
     <div>
       <Routes>

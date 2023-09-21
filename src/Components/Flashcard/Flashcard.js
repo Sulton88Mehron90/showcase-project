@@ -38,8 +38,14 @@ export default function Flashcard({ flashcard }) {
           })}
         </div>
       </div>
-      <div className="back" ref={backEl}>{flashcard.correctAnswer}</div>
+      {/* <div className="back" ref={backEl}>{flashcard.correctAnswer}</div> */}
       {/* <div className='back'>{flashcard.correctAnswer}</div> */}
+      <div className="back" ref={backEl}>
+        {flip && (
+          <span className="correct-answer-emoji" role="img" aria-label="Correct Answer">🌱</span>
+        )}
+        {flashcard.correctAnswer}
+      </div>
     </div>
   )
 }
