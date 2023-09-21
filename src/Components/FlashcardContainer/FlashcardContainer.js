@@ -1,25 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Flashcard from '../Flashcard/Flashcard';
-import { Link } from 'react-router-dom'
-import '../Flashcard/Flashcard.css'
+import { Link } from 'react-router-dom';
 
-// export default function FlashcardContainer({ flashcards }) {
-//   return (
-//     <div className='container'>
-//       <div className='card-grid'>
-//         {flashcards.map(flashcard => {
-//           return <Flashcard flashcard={flashcard} key={flashcard.id} />;
-//         })}
-//         <Link to="/" className="button">Go Back</Link>
-//       </div>
-//     </div>
-//   );
-// }
-
+import '../Flashcard/Flashcard.css';
 
 export default function FlashcardContainer({ flashcards, loading, categories, selectedCategory, setSelectedCategory, numberOfQuestions, setNumberOfQuestions, handleSubmit }) {
-  
   return (
     <div className='container'>
       <form className="header" onSubmit={handleSubmit}>
@@ -39,19 +25,16 @@ export default function FlashcardContainer({ flashcards, loading, categories, se
           <button className="btn">Generate</button>
         </div>
       </form>
-      <div className='container'>
+
       <div className='card-grid'>
         {flashcards.map(flashcard => {
           return <Flashcard flashcard={flashcard} key={flashcard.id} />;
         })}
-        <Link to="/" className="button">Go Back</Link>
+        <Link to="/" className="button go-back-button">Exit</Link>
       </div>
-    </div>
     </div>
   );
 }
-
-
 
 FlashcardContainer.propTypes = {
   flashcards: PropTypes.arrayOf(
@@ -61,5 +44,12 @@ FlashcardContainer.propTypes = {
       correctAnswer: PropTypes.string.isRequired,
       options: PropTypes.arrayOf(PropTypes.string).isRequired
     })
-  ).isRequired
+  ).isRequired,
+  loading: PropTypes.bool.isRequired,
+  categories: PropTypes.array.isRequired,
+  selectedCategory: PropTypes.string.isRequired,
+  setSelectedCategory: PropTypes.func.isRequired,
+  numberOfQuestions: PropTypes.number.isRequired,
+  setNumberOfQuestions: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
 };
