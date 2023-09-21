@@ -49,13 +49,14 @@ body {
 
 .btn {
   background-color: hsl(200, 100%, 50%);
+  /* background-color:rgb(13, 246, 5); */
   color: white;
-  padding: .5em 1em;
   border-radius: .3em;
   border: none;
   cursor: pointer;
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
+  margin-right: 2rem;
 }
 
 .btn:hover {
@@ -130,13 +131,22 @@ body {
   margin-right: 20px;
 }
 
+.correct-answer-emoji {
+  position: absolute;
+  top: 0.1rem; /* Adjust this value to control the vertical position */
+  right: 8rem; /* Adjust this value to control the horizontal position */
+}
+
 .button.go-back-button {
-  background-color: hsl(200, 100%, 50%);
-  margin-right: 20px;
+  /* background-color: hsl(200, 100%, 50%); */
+  background-color: rgb(13, 246, 5);
+  margin-left: 60px;
+  border-radius: .3em;
 }
 
 .button.go-back-button:hover {
-  background-color: rgb(13, 246, 5)
+  /* background-color: rgb(13, 246, 5); */
+   background-color: hsl(200, 100%, 50%);
 }
 
 img {
