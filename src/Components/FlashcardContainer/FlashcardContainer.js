@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Flashcard from '../Flashcard/Flashcard';
 import { Link } from 'react-router-dom';
-import Loading from '../LoadingComponent/Loading';
+import Loading from '../ErrorComponent/Loading';
 
 import '../Flashcard/Flashcard.css';
 
