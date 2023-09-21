@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Flashcard from '../Flashcard/Flashcard';
 import { Link } from 'react-router-dom';
-
 import '../Flashcard/Flashcard.css';
 
 export default function FlashcardContainer({ flashcards, loading, categories, selectedCategory, setSelectedCategory, numberOfQuestions, setNumberOfQuestions, handleSubmit }) {
@@ -16,10 +15,11 @@ export default function FlashcardContainer({ flashcards, loading, categories, se
               return <option value={category.id} key={category.id}>{category.name}</option>
             })}
           </select>
+
         </div>
         <div className="form-group">
           <label htmlFor="amount">Number of Questions</label>
-          <input type="number" id="amount" min="1" step="1" defaultValue={numberOfQuestions} onChange={(e) => setNumberOfQuestions(e.target.value)} />
+          <input type="number" id="amount" min="1" step="1" defaultValue={numberOfQuestions} onChange={(e) => setNumberOfQuestions(Number(e.target.value))} />
         </div>
         <div className="form-group">
           <button className="btn">Generate</button>
