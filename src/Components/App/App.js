@@ -74,8 +74,6 @@ export default function App() {
       });
   };  
 
-<<<<<<< HEAD
-=======
   function handleError(error) {
     if (error.message === '500') {
       setError('500');
@@ -91,7 +89,6 @@ export default function App() {
     return <div className="loading"><div className="spinner"></div></div>;
   }
 
->>>>>>> main
 return (
     <div>
       <Routes>
