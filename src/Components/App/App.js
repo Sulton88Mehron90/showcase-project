@@ -13,7 +13,6 @@ export default function App() {
   const [numberOfQuestions, setNumberOfQuestions] = useState(10);
   const [error, setError] = useState(null);
 
-
   useEffect(() => {
     setLoading(true);
     getTrivia(numberOfQuestions, selectedCategory)

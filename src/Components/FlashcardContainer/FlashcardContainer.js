@@ -30,7 +30,7 @@ export default function FlashcardContainer({ flashcards, loading, categories, se
         {flashcards.map(flashcard => {
           return <Flashcard flashcard={flashcard} key={flashcard.id} />;
         })}
-        <Link to="/" className="button">Exit</Link>
+        <Link to="/" className="button go-back-button">Exit</Link>
       </div>
     </div>
   );
