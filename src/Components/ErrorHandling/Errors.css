@@ -12,6 +12,7 @@
   align-items: center;
   overflow-y: auto;
   font-family: 'Times New Roman', serif;
+  flex-wrap: wrap;
 }
 
 .error-msg h1 {
@@ -32,10 +33,10 @@
 }
 
 .error-msg img {
-  width:45rem;
-  max-width: 500px;
+  width: 80%;
+  margin: 2% auto;
+  max-width: 50rem;
   margin-top: 1rem;
-  margin-right: 1rem; 
   border-radius: 10%;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -45,11 +46,13 @@
   padding: 10px 20px;
   background-color: #FFD700;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   color: black;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease; 
+  margin-top: 20px; 
+  margin-bottom: 20px;
 }
 
 .errors-go-home-button:hover {
@@ -57,30 +60,32 @@
   transform: translateY(-2px); 
 }
 
+.error-message {
+  margin-top: 20px;
+  /* flex-wrap: wrap;  */
+}
+
 @media (max-width: 768px) {
   .error-msg {
     padding: 1rem;
     height: calc(100vh - 4rem);
   }
-
   .error-msg h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .error-msg h2,
   .error-msg h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1.5em;
+    font-size: 1rem; 
+    margin-bottom: 1em;
   }
 
   .error-msg img {
-    max-width: 250px;
-    margin-right: 0;
-    margin-top: 5%;
+    width: 50%; 
   }
 
   .errors-go-home-button {
-    padding: 8px 16px;
-    font-size: 14px;
+    padding: 5px 10px; 
+    font-size: 12px; 
   }
 }

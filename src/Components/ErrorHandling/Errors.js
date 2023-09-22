@@ -34,7 +34,7 @@ function Errors({ error, setError, setTriviaLoading }) {
           Go Back to Home Page
         </button>
       </NavLink>
-      <h2>{error ? error.message : 'Something went wrong.'}</h2>
+      <h2 className="error-message">{error ? error.message : 'Something went wrong.'}</h2>
       {error && error.statusCode && <p>Status Code: {error.statusCode}</p>}
       {error && error.statusCode && (
         <div className="error-info">
