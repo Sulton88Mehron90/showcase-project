@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Flashcard from '../Flashcard/Flashcard';
-import { Link } from 'react-router-dom';
 import '../Flashcard/Flashcard.css';
+import { Link } from 'react-router-dom';
+import '../FlashcardContainer/FlashcardContainer.css';
+import BrainImage from '../../Images/brain2.png';
+// import BrainWeight from '../../Images/brainweight.jpg'
 
 export default function FlashcardContainer({ flashcards, loading, categories, selectedCategory, setSelectedCategory, numberOfQuestions, setNumberOfQuestions, handleSubmit }) {
   return (
@@ -25,12 +28,12 @@ export default function FlashcardContainer({ flashcards, loading, categories, se
           <button className="btn">Generate</button>
         </div>
       </form>
-
       <div className='card-grid'>
         {flashcards.map(flashcard => {
           return <Flashcard flashcard={flashcard} key={flashcard.id} />;
         })}
-        <Link to="/" className="button go-back-button">Exit</Link>
+        <Link to="/" className="button go-back-button">Exit The Game</Link>
+        <img src={BrainImage} alt="Brain" />
       </div>
     </div>
   );
