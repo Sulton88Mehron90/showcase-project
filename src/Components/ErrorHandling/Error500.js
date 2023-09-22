@@ -24,7 +24,7 @@ function Error500() {
         <p>We're working to fix it. Please try again later.</p>
       </div>
       <NavLink to="/" style={{ textDecoration: 'none' }}>
-        <button className="go-home-button" aria-label="Go back to the home page">Go Back to Home Page</button>
+        <button className="error500-go-home-button" aria-label="Go back to the home page">Go Back to Home Page</button>
       </NavLink>
     </div>
   );

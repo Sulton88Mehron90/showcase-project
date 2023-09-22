@@ -5,7 +5,6 @@ import '../Flashcard/Flashcard.css';
 import { Link } from 'react-router-dom';
 import '../FlashcardContainer/FlashcardContainer.css';
 import BrainImage from '../../Images/brain2.png';
-// import BrainWeight from '../../Images/brainweight.jpg'
 
 export default function FlashcardContainer({ flashcards, loading, categories, selectedCategory, setSelectedCategory, numberOfQuestions, setNumberOfQuestions, handleSubmit }) {
   return (

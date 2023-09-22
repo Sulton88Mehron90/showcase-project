@@ -19,7 +19,7 @@
   margin-top: -20px;
 }
 
-.go-home-button {
+.error500-go-home-button {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #FFD700;
@@ -31,7 +31,7 @@
   transition: background-color 0.3s ease;
 }
 
-.go-home-button:hover {
+.error500-go-home-button {
   background-color: #FFC300;
 }
 
