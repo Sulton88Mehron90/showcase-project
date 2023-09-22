@@ -1,16 +1,3 @@
-// import React from 'react';
-
-// function Error500() {
-//   return (
-//     <div>
-//       <h1>500 - Internal Server Error</h1>
-//       {/* Add error message or content */}
-//     </div>
-//   );
-// }
-
-// export default Error500;
-
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Error500.css';
@@ -24,7 +11,7 @@ function Error500() {
         <p>We're working to fix it. Please try again later.</p>
       </div>
       <NavLink to="/" style={{ textDecoration: 'none' }}>
-        <button className="go-home-button" aria-label="Go back to the home page">Go Back to Home Page</button>
+        <button className="error500-go-home-button" aria-label="Go back to the home page">Go Back to Home Page</button>
       </NavLink>
     </div>
   );

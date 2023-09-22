@@ -46,16 +46,17 @@ p {
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  align-self: stretch;
 }
 
-img {
+.img-container img {
   width: 50%;
   height: auto;
-  /* border: 1px solid #ccc; */
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+  margin: 0;
+  padding: 0;
 }
 
-a {
+.styled-anchor {
   display: inline-block;
   background-color: hsl(200, 100%, 50%);
   color: white;
@@ -68,7 +69,7 @@ a {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
 }
 
-a:hover {
+.styled-anchor:hover {
   background-color: hwb(138 13% 4%);
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
 }

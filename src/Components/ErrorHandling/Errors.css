@@ -1,46 +1,91 @@
 .error-msg {
-    background-color: #e8f5e9;
-    color: #1b5e20;
-    text-align: center;
-    padding: 2rem;
-    height: calc(100vh - 8rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-image: url('../../Images/parchment-paper.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #5a3822;
+  text-align: center;
+  padding: 2em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  font-family: 'Times New Roman', serif;
+  flex-wrap: wrap;
+}
+
+.error-msg h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+  border-bottom: 3px solid #d2a45b; 
+  padding-bottom: 0.5em;
+}
+
+.error-msg h2,
+.error-msg h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2em;
+  margin-top: -10px;
+  word-wrap: break-word;
+  padding: 1%;
+}
+
+.error-msg img {
+  width: 80%;
+  margin: 2% auto;
+  max-width: 50rem;
+  margin-top: 1rem;
+  border-radius: 10%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.errors-go-home-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #FFD700;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+  margin-top: 20px; 
+  margin-bottom: 20px;
+}
+
+.errors-go-home-button:hover {
+  background-color: #FFC300;
+  transform: translateY(-2px); 
+}
+
+.error-message {
+  margin-top: 20px;
+  /* flex-wrap: wrap;  */
+}
+
+@media (max-width: 768px) {
+  .error-msg {
+    padding: 1rem;
+    height: calc(100vh - 4rem);
   }
-  
   .error-msg h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    padding: 1%;
+    font-size: 1.8rem;
   }
-  
+
   .error-msg h2,
   .error-msg h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem; 
-    word-wrap: break-word;
-    padding: 1%;
+    font-size: 1rem; 
+    margin-bottom: 1em;
   }
-  
+
   .error-msg img {
-    max-width: 350px;
-    border-radius: 10%;
-    box-shadow: 0px 5px 10px rgba(27, 94, 32, 0.2);
+    width: 50%; 
   }
-  
-  @media (max-width: 768px) {
-    .error-msg {
-      padding: 1rem; 
-      height: calc(100vh - 4rem);
-    }
-    .error-msg h1 {
-      font-size: 2rem;
-    }
-  
-    .error-msg img {
-      max-width: 250px;
-    }
+
+  .errors-go-home-button {
+    padding: 5px 10px; 
+    font-size: 12px; 
   }
-  
+}

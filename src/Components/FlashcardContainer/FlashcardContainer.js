@@ -5,7 +5,6 @@ import '../Flashcard/Flashcard.css';
 import { Link } from 'react-router-dom';
 import '../FlashcardContainer/FlashcardContainer.css';
 import BrainImage from '../../Images/brain2.png';
-// import BrainWeight from '../../Images/brainweight.jpg'
 
 export default function FlashcardContainer({ flashcards, loading, categories, selectedCategory, setSelectedCategory, numberOfQuestions, setNumberOfQuestions, handleSubmit }) {
   return (
@@ -21,15 +20,15 @@ export default function FlashcardContainer({ flashcards, loading, categories, se
         </div>
         <div className="form-group">
           <label htmlFor="amount">Number of Questions (Max: 50)</label>
-          <input 
-            type="number" 
-            id="amount" 
-            min="1" 
-            max="50" 
-            step="1" 
-            defaultValue={numberOfQuestions} 
+          <input
+            type="number"
+            id="amount"
+            min="1"
+            max="50"
+            step="1"
+            defaultValue={numberOfQuestions}
             onChange={(e) => setNumberOfQuestions(Number(e.target.value))}
-            aria-describedby="amountHint" 
+            aria-describedby="amountHint"
           />
           <span id="amountHint" className="visually-hidden">Choose a number between 1 and 50.</span>
         </div>
@@ -37,12 +36,12 @@ export default function FlashcardContainer({ flashcards, loading, categories, se
           <button className="btn" aria-label="Generate flashcards based on selected category and number">Generate</button>
         </div>
       </form>
-      <div className='card-grid' aria-live="polite"> 
+      <div className='card-grid' aria-live="polite">
         {flashcards.map(flashcard => {
           return <Flashcard flashcard={flashcard} key={flashcard.id} />;
         })}
         <Link to="/" className="button go-back-button" aria-label="Exit the trivia game and return to home">Exit The Game</Link>
-        <img src={BrainImage} alt="Philosophical representation of a brain and face intertwining with a tree." role="presentation" /> 
+        <img src={BrainImage} alt="Philosophical representation of a brain and face intertwining with a tree." role="presentation" />
       </div>
     </div>
   );

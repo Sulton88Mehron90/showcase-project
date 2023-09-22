@@ -1,10 +1,21 @@
-
 img {
-    width: 5rem; 
+    width: 15rem;
     height: auto;
-    /* margin: 20px auto 20px 9rem; */
+    margin: 10px auto 10px 2rem;
     display: block;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
 
 /* Media Query for Tablets */
 @media (max-width: 768px) {
@@ -21,15 +32,3 @@ img {
         margin-right: 2rem;
     }
 }
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-  }
-  

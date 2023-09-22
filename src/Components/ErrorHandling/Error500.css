@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px; 
 }
 
 .error-heading {
@@ -19,7 +20,7 @@
   margin-top: -20px;
 }
 
-.go-home-button {
+.error500-go-home-button {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #FFD700;
@@ -28,15 +29,29 @@
   color: black;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
 }
 
-.go-home-button:hover {
+.error500-go-home-button {
   background-color: #FFC300;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px); 
 }
 
 @media (max-width: 768px) {
   .error-page-container {
     padding-top: 100px;
+  }
+
+  .error-heading {
+    font-size: 42px;  
+  }
+
+  .error-message h3 {
+    font-size: 28px;  
+  }
+
+  .error500-go-home-button {
+    font-size: 16px;  
   }
 }
