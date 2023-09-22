@@ -1,16 +1,3 @@
-// import React from 'react';
-
-// function Error500() {
-//   return (
-//     <div>
-//       <h1>500 - Internal Server Error</h1>
-//       {/* Add error message or content */}
-//     </div>
-//   );
-// }
-
-// export default Error500;
-
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Error500.css';

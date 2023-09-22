@@ -29,9 +29,7 @@
 }
 
 .not-found-page-container .error404-go-home-button {
-  /* background-color: hsl(200, 100%, 50%)!important; */
-  background-color: #FFD700;
-  /* color: white; */
+  background-color: #FFC300 !important;
   color: rgb(11, 0, 0);
   padding: 1em;
   border: none;
@@ -47,7 +45,7 @@
 }
 
 .not-found-page-container .error404-go-home-button:hover {
-  background-color:hwb(138 13% 4%) !important;
+  background-color: #FFC300 !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transform: translateY(-2px); 
 }
@@ -87,7 +85,6 @@
   margin-bottom: 1em;
   text-align: center;
 } 
-
 
 .fun-fact-heading, .fun-fact {
   border: 1px solid #d2a45b;

@@ -1,4 +1,3 @@
-// import React, { useState } from 'react';
 import React, { useState, useEffect, useRef } from 'react'
 import PropTypes from 'prop-types';
 import './Flashcard.css';
@@ -24,10 +23,9 @@ export default function Flashcard({ flashcard }) {
 
 
   console.log("Flashcard object:", flashcard);  // dont forget to delete this console
-  
+
   return (
     <div className={`card ${flip ? 'flip' : ''}`} style={{ height: `${height}px` }} onClick={() => setFlip(!flip)}>
-      {/* <div className='front'> */}
       <div className="front" ref={frontEl}>
         {flashcard.question}
         <div className='flashcard-options'>
@@ -36,8 +34,6 @@ export default function Flashcard({ flashcard }) {
           })}
         </div>
       </div>
-      {/* <div className="back" ref={backEl}>{flashcard.correctAnswer}</div> */}
-      {/* <div className='back'>{flashcard.correctAnswer}</div> */}
       <div className="back" ref={backEl}>
         {flip && (
           <span className="correct-answer-emoji" role="img" aria-label="Correct Answer">🌱</span>

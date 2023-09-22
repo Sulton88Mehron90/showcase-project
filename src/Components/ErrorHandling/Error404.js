@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./Error404.css";
-// import GreatMinds from "../../Images/greatminds.jpg";
 import GreatMinds from "../../Images/avicenna.png";
 
 const avicennaFunFacts = [

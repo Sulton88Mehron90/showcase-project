@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, Navigate, Link } from 'react-router-dom';
+import { Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import FlashcardContainer from '../FlashcardContainer/FlashcardContainer';
 import HomePage from '../HomePage/HomePage';
 import { getTrivia, getCategories } from '../../ApiCalls';
@@ -16,7 +16,7 @@ export default function App() {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [numberOfQuestions, setNumberOfQuestions] = useState(10);
   const [error, setError] = useState(null);
-
+  const navigate = useNavigate();
 
   useEffect(() => {
     getCategories()
@@ -27,9 +27,9 @@ export default function App() {
       .catch(error => {
         console.error('There was an error fetching trivia categories:', error);
         setCategoriesLoading(false);
-        handleError(error);
+        navigate('/error');
       });
-  }, []);
+  }, [navigate]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -53,31 +53,10 @@ export default function App() {
       .catch(error => {
         console.error('There was an error fetching trivia questions:', error);
         setTriviaLoading(false);
-        handleError(error);
+        navigate('/error');
       });
   };
 
-  function handleError(error) {
-    if (error.message === '500') {
-      setError('500');
-    } else if (error.message === '404') {
-      setError('404');
-    } else {
-      setError('Other');
-    }
-    setTriviaLoading(false);
-  }
-
-  if (error) {
-    return (
-      <div role="alert">
-        {error === '404' && <p>Error 404: Not Found</p>}
-        {error === '500' && <p>Error 500: Internal Server Error</p>}
-        {error === 'Other' && <p>An error occurred.</p>}
-      </div>
-    );
-  }
-  
   if (categoriesLoading || triviaLoading) {
     return <div className="loading"><div className="spinner"></div></div>;
   }
@@ -89,7 +68,8 @@ export default function App() {
         <Route path="/404" element={<Error404 />} />
         <Route path="/500" element={<Error500 />} />
         <Route path="/test-500" element={<Error500 />} />
-        <Route path="/error" element={<Errors error={{ message: error }} />} />
+        <Route path="/error" element={<Errors error={error} setError={setError} setTriviaLoading={setTriviaLoading} />} />
+
         <Route
           path="/flashcards"
           element={

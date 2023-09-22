@@ -1,6 +1,5 @@
-
 img {
-    width: 5rem; 
+    width: 5rem;
     height: auto;
     margin: 10px auto 10px 2rem;
     display: block;
@@ -15,8 +14,8 @@ img {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
-  }
-  
+}
+
 
 /* Media Query for Tablets */
 @media (max-width: 768px) {
