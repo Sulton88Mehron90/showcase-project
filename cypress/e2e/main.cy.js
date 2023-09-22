@@ -124,7 +124,6 @@ describe('Flashcard Page', () => {
   });
 
   it('should show the correct answer when a flashcard is clicked', () => {
-    // Replace '.flashcard' and '.answer' with your actual selectors.
     cy.get('.flashcard').first().click();
     cy.get('.answer').should('be.visible');
   });
