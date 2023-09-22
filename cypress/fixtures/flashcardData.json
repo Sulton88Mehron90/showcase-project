@@ -1,29 +1,86 @@
 {
     "response_code": 0,
     "results": [
-        {
-            "category": "Sports",
-            "type": "multiple",
-            "difficulty": "easy",
-            "question": "Which of the following sports is not part of the triathlon?",
-            "correct_answer": "Horse-Riding",
-            "incorrect_answers": [
-                "Cycling",
-                "Swimming",
-                "Running"
-            ]
-        },
-        {
-            "category": "History",
-            "type": "multiple",
-            "difficulty": "hard",
-            "question": "What is the name of the Boeing B-29 that dropped the 'Little Boy' atomic bomb on Hiroshima?",
-            "correct_answer": "Enola Gay",
-            "incorrect_answers": [
-                "Necessary Evil",
-                "The Great Artiste",
-                "Full House"
-            ]
-        }
+      {
+        "category": "Science: Mathematics",
+        "type": "multiple",
+        "difficulty": "hard",
+        "question": "What is the approximate value of mathematical constant e?",
+        "correct_answer": "2.72",
+        "incorrect_answers": ["3.14", "1.62", "1.41"]
+      },
+      {
+        "category": "General Knowledge",
+        "type": "multiple",
+        "difficulty": "medium",
+        "question": "What is a dead mall?",
+        "correct_answer": "A mall with high vacancy rates or low consumer foot traffic",
+        "incorrect_answers": ["A mall with no stores", "A mall that has been condemned", "A mall after business hours"]
+      },
+      {
+        "category": "Entertainment: Music",
+        "type": "multiple",
+        "difficulty": "easy",
+        "question": "According to the American rapper Nelly, what should you do when its hot in here?",
+        "correct_answer": "Take off all your clothes",
+        "incorrect_answers": ["Take a cool shower", "Drink some water", "Go skinny dipping"]
+      },
+      {
+        "category": "Entertainment: Video Games",
+        "type": "multiple",
+        "difficulty": "hard",
+        "question": "In the game Danganronpa: Happy Trigger Havoc, the character Aoi Asahina's ultimate ability is what?",
+        "correct_answer": "Ultimate Swimmer",
+        "incorrect_answers": ["Ultimate Detective", "Ultimate Gambler", "Ultimate Dancer"]
+      },
+      {
+        "category": "Geography",
+        "type": "multiple",
+        "difficulty": "hard",
+        "question": "What North American tourist attraction is served by the 'Maid of the Mist' tour company?",
+        "correct_answer": "Niagara Falls",
+        "incorrect_answers": ["Whistler, British Columbia", "Disney World", "Yosemite National Park"]
+      },
+      {
+        "category": "Entertainment: Japanese Anime & Manga",
+        "type": "multiple",
+        "difficulty": "hard",
+        "question": "In 'Hunter x Hunter', what are members in Killua's family known for being?",
+        "correct_answer": "Assassins",
+        "incorrect_answers": ["Bandits", "Hunters", "Ninjas"]
+      },
+      {
+        "category": "Entertainment: Board Games",
+        "type": "multiple",
+        "difficulty": "easy",
+        "question": "In board games, an additional or amended rule that applies to a certain group or place is informally known as a 'what' rule?",
+        "correct_answer": "House",
+        "incorrect_answers": ["Custom", "Extra", "Change"]
+      },
+      {
+        "category": "Entertainment: Television",
+        "type": "multiple",
+        "difficulty": "medium",
+        "question": "In the Sci-Fi television show Doctor Who, who plays the Tenth Doctor?",
+        "correct_answer": "David Tennant",
+        "incorrect_answers": ["William Hartnell", "Peter Capaldi", "Peter Davison"]
+      },
+      {
+        "category": "Entertainment: Video Games",
+        "type": "multiple",
+        "difficulty": "medium",
+        "question": "In Night In The Woods, what is Mae Borowski mother's name?",
+        "correct_answer": "Candy",
+        "incorrect_answers": ["Jenny", "Margaret", "Kate"]
+      },
+      {
+        "category": "History",
+        "type": "multiple",
+        "difficulty": "medium",
+        "question": "What was the name of the chemical that was dropped on Vietnam during the Vietnam war?",
+        "correct_answer": "Agent Orange",
+        "incorrect_answers": ["Phosgene", "Mustard Gas", "Hydrogen Cyanide"]
+      }
     ]
-}
+  }
+  
