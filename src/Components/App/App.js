@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Navigate, Link } from 'react-router-dom';
 import FlashcardContainer from '../FlashcardContainer/FlashcardContainer';
 import HomePage from '../HomePage/HomePage';
 import { getTrivia, getCategories } from '../../ApiCalls';
 import '../Flashcard/Flashcard.css'
+import Error404 from '../ErrorHandling/Error404'
+import Error500 from '../ErrorHandling/Error500'
+import Errors from '../ErrorHandling/Errors';
 
 export default function App() {
   const [flashcards, setFlashcards] = useState([]);
@@ -14,6 +17,7 @@ export default function App() {
   const [numberOfQuestions, setNumberOfQuestions] = useState(10);
   const [error, setError] = useState(null);
 
+
   useEffect(() => {
     getCategories()
       .then(data => {
@@ -23,6 +27,7 @@ export default function App() {
       .catch(error => {
         console.error('There was an error fetching trivia categories:', error);
         setCategoriesLoading(false);
+        handleError(error);
       });
   }, []);
 
@@ -48,6 +53,7 @@ export default function App() {
       .catch(error => {
         console.error('There was an error fetching trivia questions:', error);
         setTriviaLoading(false);
+        handleError(error);
       });
   };
 
@@ -62,6 +68,16 @@ export default function App() {
     setTriviaLoading(false);
   }
 
+  if (error) {
+    return (
+      <div role="alert">
+        {error === '404' && <p>Error 404: Not Found</p>}
+        {error === '500' && <p>Error 500: Internal Server Error</p>}
+        {error === 'Other' && <p>An error occurred.</p>}
+      </div>
+    );
+  }
+  
   if (categoriesLoading || triviaLoading) {
     return <div className="loading"><div className="spinner"></div></div>;
   }
@@ -70,6 +86,10 @@ export default function App() {
     <div>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/404" element={<Error404 />} />
+        <Route path="/500" element={<Error500 />} />
+        <Route path="/test-500" element={<Error500 />} />
+        <Route path="/error" element={<Errors error={{ message: error }} />} />
         <Route
           path="/flashcards"
           element={
@@ -85,8 +105,8 @@ export default function App() {
             />
           }
         />
+        <Route path="*" element={<Navigate to="/404" />} />
       </Routes>
     </div>
   );
-}
-
+}  
