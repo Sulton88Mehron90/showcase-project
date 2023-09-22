@@ -70,15 +70,14 @@ export default function App() {
 
   if (error) {
     return (
-      <div>
+      <div role="alert">
         {error === '404' && <p>Error 404: Not Found</p>}
         {error === '500' && <p>Error 500: Internal Server Error</p>}
         {error === 'Other' && <p>An error occurred.</p>}
       </div>
     );
   }
-
-
+  
   if (categoriesLoading || triviaLoading) {
     return <div className="loading"><div className="spinner"></div></div>;
   }
@@ -90,7 +89,6 @@ export default function App() {
         <Route path="/404" element={<Error404 />} />
         <Route path="/500" element={<Error500 />} />
         <Route path="/test-500" element={<Error500 />} />
-        {/* <Route path="/error" element={<Errors error={{ message: newError }} />} /> */}
         <Route path="/error" element={<Errors error={{ message: error }} />} />
         <Route
           path="/flashcards"
