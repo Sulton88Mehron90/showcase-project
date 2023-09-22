@@ -51,7 +51,7 @@ describe('Home Page', () => {
 // });
 
 
-// describe('HomePage Tests', () => {
+// describe('Flashcard Page', () => {
 //   beforeEach(() => {
 //     cy.intercept('GET', 'https://opentdb.com/api.php*', {
 //       statusCode: 200,
@@ -64,3 +64,67 @@ describe('Home Page', () => {
 
 //     cy.visit('http://localhost:3000/');
 //   });
+// })
+
+describe('Flashcard Page', () => {
+    beforeEach(() => {
+      cy.intercept('GET', 'https://opentdb.com/api.php*', {
+        statusCode: 200,
+        fixture: 'flashcardData.json'
+      });
+  
+      cy.intercept('GET', 'https://opentdb.com/api_category.php', {
+        statusCode: 200,
+        fixture: 'flashcardData.json'
+      });
+  
+      cy.visit('http://localhost:3000/flashcards');
+    });
+  
+    it('should load the page without errors', () => {
+      cy.url().should('include', '/flashcards');
+    });
+
+    it('should display the form when visiting for the first time', () => {
+      cy.get('.container').should('be.visible');
+    });
+  
+    // it('should display flashcards with trivia questions', () => {
+    //   cy.get('.flashcard').should('be.visible');
+    // });
+  
+  //   it('should show the correct answer when a flashcard is clicked', () => {
+  //     // Replace '.flashcard' and '.answer' with your actual selectors.
+  //     cy.get('.flashcard').first().click();
+  //     cy.get('.answer').should('be.visible');
+  //   });
+  
+  //   it('should filter questions when a category is selected', () => {
+  //     // Mock API response for filtered questions.
+  //     cy.intercept('GET', 'https://opentdb.com/api.php*category=Sports*', {
+  //       statusCode: 200,
+  //       fixture: 'filteredQuestionsData.json'
+  //     });
+  
+  //     // Replace '#category' with the actual selector for your category dropdown.
+  //     cy.get('#category').select('Sports'); // Assuming "Sports" is one of the options.
+      
+  //     // Check that the displayed questions belong to the "Sports" category.
+  //     // You can assert the questions' category in the mocked response or check the UI.
+  //   });
+  
+  //   it('should display the specified number of questions', () => {
+  //     // Mock API response for the specified number of questions.
+  //     cy.intercept('GET', 'https://opentdb.com/api.php*amount=10*', {
+  //       statusCode: 200,
+  //       fixture: 'specifiedQuestionsData.json'
+  //     });
+  
+  //     // Replace '#amount' with the actual selector for your question amount input.
+  //     cy.get('#amount').type('10'); // Ask for 10 questions.
+      
+  //     // Check that the number of displayed questions matches the specified amount.
+  //     cy.get('.flashcard').should('have.length', 10);
+  //   });
+  });
+  

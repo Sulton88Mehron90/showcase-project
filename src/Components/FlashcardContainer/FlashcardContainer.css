@@ -1,0 +1,23 @@
+
+img {
+    width: 5rem; 
+    height: auto;
+    /* margin: 20px auto 20px 9rem; */
+    display: block;
+}
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+    img {
+        width: 4rem;
+        margin-right: 5rem;
+    }
+}
+
+/* Media Query for Mobile Phones */
+@media (max-width: 480px) {
+    img {
+        width: 3rem;
+        margin-right: 2rem;
+    }
+}
