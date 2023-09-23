@@ -1,10 +1,12 @@
 describe('Error Handling', () => {
   it('should display a 500 error message when the server fails', () => {
-    cy.intercept('GET', 'https://opentdb.com/api_category.php', {
+    // cy.intercept('GET', 'https://opentdb.com/api_category.php', {
+    //   statusCode: 500
+    // });
+    cy.intercept('GET', 'https://opentdb.com/api.php?amount=10&type=multiple&encode=url3986', {
       statusCode: 500
     });
-   // https://opentdb.com/api.php?amount=10&type=multiple&encode=url3986
-   
+  
     cy.visit('http://localhost:3000/');
     cy.contains('500 - Internal Server Error').should('be.visible');
     cy.contains("Oops! Something went wrong on our end.").should('be.visible');

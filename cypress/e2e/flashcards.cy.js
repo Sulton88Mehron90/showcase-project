@@ -1,6 +1,8 @@
 const selectedCategory = 'Sports';
 const numberOfQuestions = 10;
 
+// https://opentdb.com/api.php?amount=50&type=multiple&encode=url3986
+
 describe('Flashcard Page', () => {
   beforeEach(() => {
     cy.intercept('GET', 'https://opentdb.com/api.php*', {
@@ -23,7 +25,6 @@ describe('Flashcard Page', () => {
     cy.get('.button').should('be.visible');
     cy.get('img').should('be.visible');
   });
-
 
   it('should display Category label and dropdown, select a category, choose the number of questions, and display flashcards with questions after clicking the Generate button', () => {
     cy.get(':nth-child(1) > label').should('be.visible');
@@ -56,33 +57,23 @@ describe('Flashcard Page - Sad Path', () => {
       statusCode: 200,
       fixture: 'sampleCategories.json'
     });
-
     cy.visit('http://localhost:3000/flashcards');
   });
 
-  it('should display an error message if fetching categories fails', () => {
-    cy.intercept('GET', 'https://opentdb.com/api_category.php', { statusCode: 500 });
-    cy.reload();
-    cy.contains('500 - Internal Server Error').should('be.visible'); 
-    cy.contains('Oops! Something went wrong on our end.').should('be.visible'); 
-
-
-    cy.visit('http://localhost:3000/');
-    cy.contains('500 - Internal Server Error').should('be.visible');
-    cy.contains("Oops! Something went wrong on our end.").should('be.visible');
-    cy.get('.go-home-button').should('be.visible');
-  });
-
-  it('should display an error message if fetching flashcards fails', () => {
-    cy.intercept('GET', 'https://opentdb.com/api.php*', { statusCode: 500 });
-    cy.get('.btn').click(); 
-    cy.contains('500 - Internal Server Error').should('be.visible'); 
-    cy.contains('Oops! Something went wrong on our end.').should('be.visible'); 
-  });
-
-  it('should show a vwarning message for invalid number of questions', () => {
+  it('should show a warning message for an invalid number of questions', () => {
     cy.get('#amount').clear();
-    cy.get('#amount').type(`60`);
-    cy.contains('Value must be less than or equal to 50').should('be.visible'); 
+    cy.get('#amount').type('60');
+    cy.get('.btn').click();
+    cy.get('#amount').invoke('prop', 'validationMessage').should('include', 'Value must be less than or equal to 50.');
+  });
+
+  it('Should navigate to error page when a 500 error occurs', () => {
+    cy.intercept('GET', 'https://opentdb.com/api.php?amount=50&type=multiple&encode=url3986', {
+      statusCode: 500
+    });
+    cy.visit('http://localhost:3000/flashcards');
+    cy.url().should('include', '/500');
+    cy.get('.error-message', { timeout: 10000 }).should('be.visible');
+    cy.contains('500 - Internal Server Error').should('be.visible');
   });
 });

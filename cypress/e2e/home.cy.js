@@ -67,7 +67,9 @@ describe('Home Page - Sad Path', () => {
   it('should show error component when the API call fails', () => {
     cy.intercept('GET', '**/api_category.php', { statusCode: 500 });
     cy.reload();
-    cy.contains('Something went wrong.').should('be.visible');
+    cy.contains('500 - Internal Server Error').should('be.visible');
+    cy.contains("Oops! Something went wrong on our end.").should('be.visible');
+    cy.get('.go-home-button').should('be.visible');
   });
   
 });
