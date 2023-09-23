@@ -15,7 +15,7 @@ export default function App() {
   const [triviaLoading, setTriviaLoading] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("");
   const [numberOfQuestions, setNumberOfQuestions] = useState(10);
-  const [error, setError] = useState('');
+  const [error, setError] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
