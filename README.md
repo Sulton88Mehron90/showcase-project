@@ -1,7 +1,7 @@
 <div>
     <h1 style="color:red; display: inline;">
       Avicenna Method
-      <img src="https://github.com/Sulton88Mehron90/rancid-tomatillos-denzel-parvin/blob/Feat/videos/src/images/Tomatillo.png" 
+      <img src="https://github.com/Sulton88Mehron90/showcase-project/blob/main/src/Images/brain2.png" 
          alt="Ibn Sino" 
          width="50" 
          style="vertical-align: middle; display: inline;" />
@@ -18,7 +18,7 @@ Test your wits, learn something new, and embark on a journey of knowledge with A
 
 ---
 ### 👁️‍🗨️ Preview of App
-<!-- ![Rancid Tomatillos](https://github.com/Sulton88Mehron90/rancid-tomatillos-denzel-parvin/blob/main/src/images/Rancid-Tomatillos.gif) -->
+<!-- ![Avicenna Method](https://github.com/Sulton88Mehron90/rancid-tomatillos-denzel-parvin/blob/main/src/images/Rancid-Tomatillos.gif) -->
 
 --- 
 ### 🌐 Live Demo
@@ -108,8 +108,8 @@ HTML and CSS served as the building blocks for our app's sleek design and intuit
 The integration of Cypress, an industry-standard testing framework, ensured that our application meets quality benchmarks. This enabled us to automate tests, guaranteeing that the app performs optimally across various browsers and devices.
 
  <h4>
-    <img src="https://github.com/Sulton88Mehron90/rancid-tomatillos-denzel-parvin/blob/Feat/videos/src/images/redTomato.png" 
-         alt="Red Tomato Logo" 
+    <img src="hhttps://github.com/Sulton88Mehron90/showcase-project/blob/main/src/Images/ibnSino.png" 
+         alt="Ibn Sino" 
          style="width: 30px; margin-right: 10px; border: 2px solid rgb(11, 166, 52); border-radius: 50%; padding: 8px; transition: transform 0.3s ease, box-shadow 0.3s ease-in-out; transform-origin: right; vertical-align: middle;" />
     Major Wins
   </h4>
@@ -120,7 +120,7 @@ The integration of Cypress, an industry-standard testing framework, ensured that
 
 <h4>
   <img src="https://github.com/Sulton88Mehron90/rancid-tomatillos-denzel-parvin/blob/Feat/videos/src/images/redTomato.png" 
-       alt="Red Tomato Logo" 
+       alt="Ibn Sino" 
        style="width: 30px; margin-right: 10px; border: 2px solid rgb(11, 166, 52); border-radius: 50%; padding: 8px; transition: transform 0.3s ease, box-shadow 0.3s ease-in-out; transform-origin: right; vertical-align: middle;" />
   Challenges
 </h4>
