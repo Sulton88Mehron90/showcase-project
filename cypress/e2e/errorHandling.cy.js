@@ -1,10 +1,13 @@
-describe('Error Handling', () => {
+describe('Error handling for getTrivia', () => {
+
   it('Should navigate to error page when a 500 error occurs', () => {
-    cy.intercept('GET', 'https://opentdb.com/api_category.php', {
-      statusCode: 500
-    });
+    cy.intercept('GET', 'https://opentdb.com/api.php*', { statusCode: 500 });
     cy.visit('http://localhost:3000/flashcards');
+    cy.get('.btn').click();
     cy.url().should('include', '/500');
+    cy.contains('500 - Internal Server Error').should('exist');
+    cy.contains("Oops! Something went wrong on our end.").should('be.visible');
+    cy.get('.error500-go-home-button').should('be.visible');
   });
 
   it('should display a 404 error message when the page is not found', () => {
@@ -19,9 +22,9 @@ describe('Error Handling', () => {
 
   it('Should display appropriate error message at /error', () => {
     cy.visit('http://localhost:3000/error');
-    cy.viewport(550, 750) 
-    cy.get('img').should('be.visible'); 
-    cy.get('h1').should('be.visible'); 
+    cy.viewport(550, 750)
+    cy.get('img').should('be.visible');
+    cy.get('h1').should('be.visible');
     cy.get('.errors-go-home-button').should('be.visible');
   });
 

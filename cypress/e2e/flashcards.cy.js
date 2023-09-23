@@ -66,15 +66,16 @@ describe('Flashcard Page - Sad Path', () => {
   });
 
   it('Should navigate to error page when a 500 error occurs', () => {
-    cy.intercept('GET', 'https://opentdb.com/api_category.php', {
-      statusCode: 500
-    });
-    
+    cy.intercept('GET', 'https://opentdb.com/api.php*', { statusCode: 500 });
     cy.visit('http://localhost:3000/flashcards');
+    cy.get('.btn').click();
     cy.url().should('include', '/500');
+    cy.contains('500 - Internal Server Error').should('exist');
+    cy.contains("Oops! Something went wrong on our end.").should('be.visible');
+    cy.get('.error500-go-home-button').should('be.visible');
   });
 
-  it('should handle non-existent routes gracefully', () => {
+  it('should handle non-existent routes', () => {
     cy.visit('http://localhost:3000/flashcards/non-existent-route');
     cy.url().should('eq', 'http://localhost:3000/404');
     cy.contains('404 - Page Not Found').should('be.visible');
@@ -82,7 +83,7 @@ describe('Flashcard Page - Sad Path', () => {
 
   it('Should display appropriate error message at /error', () => {
     cy.visit('http://localhost:3000/error');
-    cy.get('img').should('be.visible'); 
-    cy.get('h1').should('be.visible'); 
+    cy.get('img').should('be.visible');
+    cy.get('h1').should('be.visible');
   });
 })
