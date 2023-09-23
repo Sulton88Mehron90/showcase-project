@@ -1,6 +1,8 @@
 const selectedCategory = 'Sports';
 const numberOfQuestions = 10;
 
+// https://opentdb.com/api.php?amount=50&type=multiple&encode=url3986
+
 describe('Flashcard Page', () => {
   beforeEach(() => {
     cy.intercept('GET', 'https://opentdb.com/api.php*', {
@@ -23,7 +25,6 @@ describe('Flashcard Page', () => {
     cy.get('.button').should('be.visible');
     cy.get('img').should('be.visible');
   });
-
 
   it('should display Category label and dropdown, select a category, choose the number of questions, and display flashcards with questions after clicking the Generate button', () => {
     cy.get(':nth-child(1) > label').should('be.visible');
@@ -49,3 +50,29 @@ describe('Flashcard Page', () => {
     cy.get('.button').click();
   });
 });
+
+describe('Flashcard Page - Sad Path', () => {
+  beforeEach(() => {
+    cy.intercept('GET', 'https://opentdb.com/api_category.php', {
+      statusCode: 200,
+      fixture: 'sampleCategories.json'
+    });
+    cy.visit('http://localhost:3000/flashcards');
+  });
+
+  it('should show a warning message for an invalid number of questions', () => {
+    cy.get('#amount').clear();
+    cy.get('#amount').type('60');
+    cy.get('.btn').click();
+    cy.get('#amount').invoke('prop', 'validationMessage').should('include', 'Value must be less than or equal to 50.');
+  });
+
+  it('Should navigate to error page when a 500 error occurs', () => {
+    cy.intercept('GET', 'https://opentdb.com/api_category.php', {
+      statusCode: 500
+    });
+    
+    cy.visit('http://localhost:3000/flashcards');
+    cy.url().should('include', '/500');
+  });
+})

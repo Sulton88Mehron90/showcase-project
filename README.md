@@ -2,15 +2,19 @@
     <h1 style="color:red; display: inline;">
       Avicenna Method
       <img src="https://github.com/Sulton88Mehron90/rancid-tomatillos-denzel-parvin/blob/Feat/videos/src/images/Tomatillo.png" 
-         alt="Rancid Tomatillos Logo" 
+         alt="Ibn Sino" 
          width="50" 
          style="vertical-align: middle; display: inline;" />
     </h1>
 </div>
 
 ### 🔖 Description
+Avicenna Method is a dynamic and interactive trivia application designed to challenge and engage users with a variety of questions across multiple categories. Named after the esteemed polymath Avicenna (Ibn Sina), this app embodies the spirit of curiosity and the thirst for knowledge.
 
-<!-- Welcome to Rancid Tomatillos, your go-to platform for all things cinema! Browse our extensive library of movies, delve into detailed information on each film, and even watch trailers. Use the search feature to find movies that pique your interest, or filter films based on ratings to discover hidden gems. -->
+Whether you're a trivia enthusiast or just someone looking to test your knowledge in diverse fields, Avicenna Method provides a tailored experience. Users can select from a range of categories, ensuring a personalized quiz session each time. With a sleek design and intuitive user interface, Avicenna Method ensures a seamless experience from start to finish.
+
+Test your wits, learn something new, and embark on a journey of knowledge with Avicenna Method!
+
 
 ---
 ### 👁️‍🗨️ Preview of App
@@ -19,7 +23,7 @@
 --- 
 ### 🌐 Live Demo
 
-<!-- [Open the app here](https://rancid-tomatillos-denzel-parvin.vercel.app/) -->
+[Open the app here](https://showcase-project-khaki.vercel.app/)
 
 ---
 
@@ -39,8 +43,8 @@
 
 ### 🕹️ Installation & Setup 
 
-- Clone this repository to your local machine using the command: `git clone git@github.com:Sulton88Mehron90/rancid-tomatillos-denzel-parvin.git`
-- Run the command: `cd rancid-tomatillos`
+- Clone this repository to your local machine using the command: `git clone git@github.com:Sulton88Mehron90/showcase-project.git`
+- Run the command: `cd showcase-project`
 - Run the command: `npm install`
 - Run the command: `npm start`
 
@@ -98,9 +102,7 @@ The primary objectives of this project are as follows:
 
 ### ✨ Context, Wins, and Challenges
 
-<!-- ### Context
-Embarking on this collaborative venture to create this application was both thrilling and educational. Utilizing React, we laid the groundwork for an interactive and dynamic UI. JavaScript enabled us to introduce complex functionalities, making the app not just visually appealing but also functional.
-
+### Context
 HTML and CSS served as the building blocks for our app's sleek design and intuitive user experience. Their synergistic power contributed to the creation of an application that is both visually stunning and user-friendly.
 
 The integration of Cypress, an industry-standard testing framework, ensured that our application meets quality benchmarks. This enabled us to automate tests, guaranteeing that the app performs optimally across various browsers and devices.
@@ -126,4 +128,4 @@ The integration of Cypress, an industry-standard testing framework, ensured that
 - Conducting end-to-end testing using Cypress posed some hurdles.
 - Implementing robust error handling was a complex but necessary part of the project.
 
---- -->
+---

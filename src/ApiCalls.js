@@ -7,12 +7,16 @@ export function getTrivia(amount = 50, category, type = 'multiple', encode = 'ur
   return fetch(API_ENDPOINT)
     .then(response => {
       if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        throw new Error(response.status.toString());
       }
       return response.json();
     })
     .catch(error => {
       console.error("There was a problem with the fetch operation:", error);
+      if (error.message === 'Failed to fetch') {
+        throw new Error('500');
+      }
+      throw error;
     });
 }
 
@@ -29,6 +33,9 @@ export function getCategories() {
     .then(data => data.trivia_categories) 
     .catch(error => {
       console.error("There was a problem with the fetch operation:", error);
+      if (error.message === 'Failed to fetch') {
+        throw new Error('500');
+      }
       throw error;
     });
 }
