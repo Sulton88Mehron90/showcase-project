@@ -10,9 +10,7 @@ Dive into a world of curiosity with **Avicenna Method**! Named after the legenda
 
 ### <span style="color:#2E8B57;">Description</span>
 
-**Avicenna Method** offers trivia enthusiasts and casual learners a chance to test and expand their knowledge across diverse categories. With a focus on a seamless user experience, our app lets users tailor their quiz sessions and discover new facts in an engaging manner.
-
-
+**Avicenna Method** offers trivia enthusiasts and casual learners a chance to test and expand their knowledge across diverse categories. With a focus on a seamless user experience, app lets users tailor their quiz sessions and discover new facts in an engaging manner.
 
 ### <span style="color:#2E8B57;">Live Demo</span>
 
@@ -24,11 +22,9 @@ Experience the joy of learning. [Engage with Avicenna Method](https://showcase-p
 - **Flashcard Interaction**: Click to flip and reveal the answers.
 
 ### <span style="color:#2E8B57;">Preview of App</span>
-<!-- ![Avicenna Method](https://github.com/Sulton88Mehron90/rancid-tomatillos-denzel-parvin/blob/main/src/images/Rancid-Tomatillos.gif) -->
+![Avicenna Method](https://github.com/Sulton88Mehron90/showcase-project/blob/main/src/Images/ibn-sino-parvin.gif)
 
-
-
-### <span style="color:#2E8B57;">Technologies</span>
+### <span style="color:#2E8B57;">Technologies:</span>
 
 **Avicenna Method** is built using a blend of modern web technologies:
 <div>  
@@ -42,7 +38,6 @@ Experience the joy of learning. [Engage with Avicenna Method](https://showcase-p
 </div>
 
 
-
 ### <span style="color:#2E8B57;">Setup & Installation</span>
 
 Get **Avicenna Method** running on your machine:
@@ -53,14 +48,12 @@ Get **Avicenna Method** running on your machine:
 4. Fire up the app: `npm start`
 
 
-
 ### <span style="color:#2E8B57;">Learning Highlights</span>
 
-- Deepened understanding of **React** and its capabilities in building scalable applications.
+- Deepened understanding of **React** and it's capabilities in building scalable applications.
 - Delved into **Cypress**, navigating its complexities to ensure reliable testing.
 - Successfully integrated with the Open Trivia Database API, bringing dynamic data to our quizzes.
 - Embraced challenges, especially in crafting a user-centric multi-page experience with **React Router**.
-
 
 
 ### <span style="color:#2E8B57;">Contributor</span>
@@ -93,9 +86,9 @@ The "Avicenna Method" project was both a challenge and a learning curve. Delving
 - React: Dived into React and built dynamic components, making the app come alive.
 - React Router: Introduced multiple views in the app, creating a seamless navigation experience for users.
 - Asynchronous JavaScript: Managed API requests smoothly, ensuring users receive fresh trivia questions on demand.
-- Cypress Testing: Got hands-on with Cypress, ensuring each part of the app worked perfectly.
-- User-Centric Approach: Designed with our audience in mind, using personas and user stories to guide the app's features.
-- Interactive Features: Allowed users to engage with trivia data, introducing filters and favorites for a tailored   experience.
+- Cypress Testing: Got hands-on with Cypress, ensuring each part of the app worked correctly.
+- User-Centric Approach: Designed with audience in mind, using personas, my sons and user stories to guide the app's features.
+- Interactive Features: Allowed users to engage with trivia data, allowing to be able to choose desired category for a tailored experience.
 - Deployment: Used Vercel to bring the app online, making sure it looks good on devices of all sizes.
 - PropTypes: Added an extra layer of reliability by ensuring consistent data flow between components.
 
@@ -108,4 +101,4 @@ The "Avicenna Method" project was both a challenge and a learning curve. Delving
 
 - Grappling with Cypress: Dived deep to achieve comprehensive end-to-end testing.
 - Error Handling Challenges: Faced complexities in error propagation, which added intricacies to the Cypress testing process.
-- Ensuring Smooth User Experience: Despite challenges, implemented precise error handling to ensure users enjoy uninterrupted sessions.
+- Ensuring Smooth User Experience: Despite challenges, implemented error handling to ensure users enjoy uninterrupted sessions.
