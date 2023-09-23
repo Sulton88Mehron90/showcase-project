@@ -49,3 +49,40 @@ describe('Flashcard Page', () => {
     cy.get('.button').click();
   });
 });
+
+describe('Flashcard Page - Sad Path', () => {
+  beforeEach(() => {
+    cy.intercept('GET', 'https://opentdb.com/api_category.php', {
+      statusCode: 200,
+      fixture: 'sampleCategories.json'
+    });
+
+    cy.visit('http://localhost:3000/flashcards');
+  });
+
+  it('should display an error message if fetching categories fails', () => {
+    cy.intercept('GET', 'https://opentdb.com/api_category.php', { statusCode: 500 });
+    cy.reload();
+    cy.contains('500 - Internal Server Error').should('be.visible'); 
+    cy.contains('Oops! Something went wrong on our end.').should('be.visible'); 
+
+
+    cy.visit('http://localhost:3000/');
+    cy.contains('500 - Internal Server Error').should('be.visible');
+    cy.contains("Oops! Something went wrong on our end.").should('be.visible');
+    cy.get('.go-home-button').should('be.visible');
+  });
+
+  it('should display an error message if fetching flashcards fails', () => {
+    cy.intercept('GET', 'https://opentdb.com/api.php*', { statusCode: 500 });
+    cy.get('.btn').click(); 
+    cy.contains('500 - Internal Server Error').should('be.visible'); 
+    cy.contains('Oops! Something went wrong on our end.').should('be.visible'); 
+  });
+
+  it('should show a vwarning message for invalid number of questions', () => {
+    cy.get('#amount').clear();
+    cy.get('#amount').type(`60`);
+    cy.contains('Value must be less than or equal to 50').should('be.visible'); 
+  });
+});

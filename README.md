@@ -2,7 +2,7 @@
     <h1 style="color:red; display: inline;">
       Avicenna Method
       <img src="https://github.com/Sulton88Mehron90/rancid-tomatillos-denzel-parvin/blob/Feat/videos/src/images/Tomatillo.png" 
-         alt="Rancid Tomatillos Logo" 
+         alt="Ibn Sino" 
          width="50" 
          style="vertical-align: middle; display: inline;" />
     </h1>
@@ -10,7 +10,7 @@
 
 ### 🔖 Description
 
-<!-- Welcome to Rancid Tomatillos, your go-to platform for all things cinema! Browse our extensive library of movies, delve into detailed information on each film, and even watch trailers. Use the search feature to find movies that pique your interest, or filter films based on ratings to discover hidden gems. -->
+
 
 ---
 ### 👁️‍🗨️ Preview of App
@@ -19,7 +19,7 @@
 --- 
 ### 🌐 Live Demo
 
-<!-- [Open the app here](https://rancid-tomatillos-denzel-parvin.vercel.app/) -->
+[Open the app here](https://showcase-project-khaki.vercel.app/)
 
 ---
 

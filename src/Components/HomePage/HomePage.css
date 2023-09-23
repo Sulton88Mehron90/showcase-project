@@ -96,6 +96,9 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.home-page-paragraph {
+  text-align: left; 
+}
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {

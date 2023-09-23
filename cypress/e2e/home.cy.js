@@ -1,6 +1,6 @@
 describe('Home Page', () => {
   beforeEach(() => {
-    cy.intercept('GET', 'https://opentdb.com/api.php*', {
+    cy.intercept('GET', 'https://opentdb.com/api.php?amount=10&type=multiple&encode=url3986', {
       statusCode: 200,
       fixture: 'flashcardData.json'
     });
@@ -53,7 +53,7 @@ describe('Home Page - Sad Path', () => {
   });
 
   it('should display an error message if the main image fails to load', () => {
-    cy.intercept('GET', '**/ibnSino2.png', { statusCode: 500 });
+    cy.intercept('GET', '**/ibnSino2.png', { statusCode: 404 });
     cy.reload();
     cy.get('img[alt="Ibn Sino"]').should('be.visible');
 });
@@ -63,7 +63,7 @@ describe('Home Page - Sad Path', () => {
     cy.url().should('eq', 'http://localhost:3000/404');
     cy.contains('404 - Page Not Found').should('be.visible');
   });
-  
+
   it('should show error component when the API call fails', () => {
     cy.intercept('GET', '**/api_category.php', { statusCode: 500 });
     cy.reload();

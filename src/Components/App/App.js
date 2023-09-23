@@ -26,8 +26,13 @@ export default function App() {
       })
       .catch(error => {
         console.error('There was an error fetching trivia categories:', error);
-        setCategoriesLoading(false);
-        navigate('/error');
+        if (error.message.includes('500')) {
+          navigate('/500');
+        } else if (error.message.includes('404')) {
+          navigate('/404');
+        } else {
+          navigate('/error');
+        }
       });
   }, [navigate]);
 
@@ -53,8 +58,14 @@ export default function App() {
       .catch(error => {
         console.error('There was an error fetching trivia questions:', error);
         setTriviaLoading(false);
-        navigate('/error');
-      });
+        if (error.message === '500') {
+          navigate('/500');
+        } else if (error.message === '404') {
+          navigate('/404');
+        } else {
+          navigate('/error');
+        }
+      });      
   };
 
   if (categoriesLoading || triviaLoading) {
