@@ -1,13 +1,10 @@
 <div>
     <h1 style="color:red; display: inline;">
       Avicenna Method
-      <img src="https://github.com/Sulton88Mehron90/showcase-project/blob/main/src/Images/brain2.png" 
-         alt="Ibn Sino" 
-         width="50" 
-         style="vertical-align: middle; display: inline;" />
+         <img src="https://github.com/Sulton88Mehron90/showcase-project/blob/main/src/Images/brain2.png" alt="Parvin's Image" width="120" style="margin: 20px; border-radius: 50%;">
     </h1>
 </div>
-
+ 
 ### 🔖 Description
 Avicenna Method is a dynamic and interactive trivia application designed to challenge and engage users with a variety of questions across multiple categories. Named after the esteemed polymath Avicenna (Ibn Sina), this app embodies the spirit of curiosity and the thirst for knowledge.
 
@@ -108,7 +105,7 @@ HTML and CSS served as the building blocks for our app's sleek design and intuit
 The integration of Cypress, an industry-standard testing framework, ensured that our application meets quality benchmarks. This enabled us to automate tests, guaranteeing that the app performs optimally across various browsers and devices.
 
  <h4>
-    <img src="hhttps://github.com/Sulton88Mehron90/showcase-project/blob/main/src/Images/ibnSino.png" 
+    <img src="https://github.com/Sulton88Mehron90/Rock-Paper-Scissors/blob/main/src/parvin_round_transparent.png" 
          alt="Ibn Sino" 
          style="width: 30px; margin-right: 10px; border: 2px solid rgb(11, 166, 52); border-radius: 50%; padding: 8px; transition: transform 0.3s ease, box-shadow 0.3s ease-in-out; transform-origin: right; vertical-align: middle;" />
     Major Wins
@@ -119,7 +116,7 @@ The integration of Cypress, an industry-standard testing framework, ensured that
 - Successfully implemented search and dynamic trailer fetching for each movie.
 
 <h4>
-  <img src="https://github.com/Sulton88Mehron90/rancid-tomatillos-denzel-parvin/blob/Feat/videos/src/images/redTomato.png" 
+  <img src="https://github.com/Sulton88Mehron90/Rock-Paper-Scissors/blob/main/src/parvin_round_transparent.png" 
        alt="Ibn Sino" 
        style="width: 30px; margin-right: 10px; border: 2px solid rgb(11, 166, 52); border-radius: 50%; padding: 8px; transition: transform 0.3s ease, box-shadow 0.3s ease-in-out; transform-origin: right; vertical-align: middle;" />
   Challenges
