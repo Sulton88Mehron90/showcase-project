@@ -1,7 +1,7 @@
 <div>
     <h1 style="color:red; display: inline;">
       Avicenna Method
-         <img src="https://github.com/Sulton88Mehron90/showcase-project/blob/main/src/Images/brain2.png" alt="Parvin's Image" width="120" style="margin: 20px; border-radius: 50%;">
+         <img src="https://github.com/Sulton88Mehron90/showcase-project/blob/main/src/Images/name.jpg" alt="Parvin's Image" width="120" style="margin: 20px; border-radius: 50%;">
     </h1>
 </div>
  
@@ -82,19 +82,6 @@ The primary objectives of this project are as follows:
     </tr>
 </table>
 
-<!-- <table>
-    <tr>
-        <td> Parvin A. Sattorova 
-            <a href="https://www.linkedin.com/in/parvin-sattorova-edwards-357526b3/">LinkedIn</a> || 
-            <a href="https://github.com/Sulton88Mehron90">GitHub</a> 
-        </td>
-        <td><img src="https://github.com/Sulton88Mehron90/rancid-tomatillos-denzel-parvin/blob/Feat/videos/src/images/Tomatillo.png" alt="Rancid Tomatillos Logo" width="50" style="vertical-align:middle"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://avatars.githubusercontent.com/u/119267809?v=4" alt="GitHub Avatar" width="150"></td>
-    </tr>
-</table> --> 
-
 ---
 
 ### ✨ Context, Wins, and Challenges
@@ -111,7 +98,6 @@ The integration of Cypress, an industry-standard testing framework, ensured that
     Major Wins
   </h4>
   
-- One of the most significant achievements was the effective teamwork. Our combined skills and effective communication facilitated a smooth development process, culminating in an application that not only meets but exceeds user expectations.
 - Achieved a visually pleasing design for the app.
 - Successfully implemented search and dynamic trailer fetching for each movie.
 
