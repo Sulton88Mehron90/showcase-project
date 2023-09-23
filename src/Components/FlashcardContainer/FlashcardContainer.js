@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import '../FlashcardContainer/FlashcardContainer.css';
 import BrainImage from '../../Images/brain2.png';
 
-export default function FlashcardContainer({ flashcards, categories, selectedCategory, setSelectedCategory, numberOfQuestions, setNumberOfQuestions, handleSubmit }) {
+export default function FlashcardContainer({ flashcards, loading, categories, selectedCategory, setSelectedCategory, numberOfQuestions, setNumberOfQuestions, handleSubmit }) {
   return (
     <div className='container' role="main">
       <form className="header" onSubmit={handleSubmit}>

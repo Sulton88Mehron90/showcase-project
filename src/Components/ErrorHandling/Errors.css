@@ -62,7 +62,6 @@
 
 .error-message {
   margin-top: 20px;
-  /* flex-wrap: wrap;  */
 }
 
 @media (max-width: 768px) {

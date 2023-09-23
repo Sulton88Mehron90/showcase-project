@@ -74,7 +74,7 @@ import GreatMinds from '../../Images/greatminds.jpg'
 import './Errors.css';
 
 function Errors({ error, setTriviaLoading }) {
-  console.log("Received error:", error); // Log the entire error object
+  console.log("Received error:", error); 
   const navigate = useNavigate();
   
   useEffect(() => {

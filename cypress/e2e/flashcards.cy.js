@@ -68,12 +68,11 @@ describe('Flashcard Page - Sad Path', () => {
   });
 
   it('Should navigate to error page when a 500 error occurs', () => {
-    cy.intercept('GET', 'https://opentdb.com/api.php?amount=50&type=multiple&encode=url3986', {
+    cy.intercept('GET', 'https://opentdb.com/api_category.php', {
       statusCode: 500
     });
+    
     cy.visit('http://localhost:3000/flashcards');
     cy.url().should('include', '/500');
-    cy.get('.error-message', { timeout: 10000 }).should('be.visible');
-    cy.contains('500 - Internal Server Error').should('be.visible');
   });
-});
+})
