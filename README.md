@@ -8,23 +8,27 @@
 
 Dive into a world of curiosity with **Avicenna Method**! Named after the legendary polymath Avicenna (Ibn Sina), this trivia application is designed for those who seek a delightful blend of challenge and learning.
 
-### Description
+### <span style="color:#2E8B57;">Description</span>
 
 **Avicenna Method** offers trivia enthusiasts and casual learners a chance to test and expand their knowledge across diverse categories. With a focus on a seamless user experience, our app lets users tailor their quiz sessions and discover new facts in an engaging manner.
 
-### Live Demo
+
+
+### <span style="color:#2E8B57;">Live Demo</span>
 
 Experience the joy of learning. [Engage with Avicenna Method](https://showcase-project-khaki.vercel.app/).
 
-### Features
+### <span style="color:#2E8B57;">Features</span>
 
 - **Dynamic Quiz Generation**: Choose your preferred category and set the number of questions.
 - **Flashcard Interaction**: Click to flip and reveal the answers.
 
-### Preview of App
+### <span style="color:#2E8B57;">Preview of App</span>
 <!-- ![Avicenna Method](https://github.com/Sulton88Mehron90/rancid-tomatillos-denzel-parvin/blob/main/src/images/Rancid-Tomatillos.gif) -->
 
-### Technologies
+
+
+### <span style="color:#2E8B57;">Technologies</span>
 
 **Avicenna Method** is built using a blend of modern web technologies:
 <div>  
@@ -37,7 +41,9 @@ Experience the joy of learning. [Engage with Avicenna Method](https://showcase-p
   <a href="https://docs.cypress.io/guides/overview/why-cypress" target="_blank"><img style="margin: 10px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoXfntUBC8eXPGA7V8dQp74I5Xofeze3tnRua5hKQkd0ofyH0cy5mJm3_Y-zPhHO2ty9k&usqp=CAU" alt="Cypress" height="50" /></a>  
 </div>
 
-### Setup & Installation
+
+
+### <span style="color:#2E8B57;">Setup & Installation</span>
 
 Get **Avicenna Method** running on your machine:
 
@@ -46,14 +52,18 @@ Get **Avicenna Method** running on your machine:
 3. Grab the dependencies: `npm install`
 4. Fire up the app: `npm start`
 
-### Learning Highlights
+
+
+### <span style="color:#2E8B57;">Learning Highlights</span>
 
 - Deepened understanding of **React** and its capabilities in building scalable applications.
 - Delved into **Cypress**, navigating its complexities to ensure reliable testing.
 - Successfully integrated with the Open Trivia Database API, bringing dynamic data to our quizzes.
 - Embraced challenges, especially in crafting a user-centric multi-page experience with **React Router**.
 
-### Contributor
+
+
+### <span style="color:#2E8B57;">Contributor</span>
 
 Meet the developer behind **Avicenna Method**:
 <table>
@@ -68,10 +78,11 @@ Meet the developer behind **Avicenna Method**:
     </tr>
 </table>
 
-### Reflections
+
+
+### <span style="color:#2E8B57;">Reflections</span>
 The "Avicenna Method" project was both a challenge and a learning curve. Delving deeper into React, Router, and asynchronous JavaScript expanded my understanding of frontend development. E2E with Cypress highlighted the significance of thorough testing, and designing for a specific audience underscored the importance of user-centric development. Despite the hurdles, like complex error handling, each obstacle strengthened my resolve and skills as a budding developer.
 
-**Major Triumphs**:
 <h4>
   <img src="https://github.com/Sulton88Mehron90/Rock-Paper-Scissors/blob/main/src/parvin_round_transparent.png" 
        alt="Ibn Sino" 
@@ -87,8 +98,6 @@ The "Avicenna Method" project was both a challenge and a learning curve. Delving
 - Interactive Features: Allowed users to engage with trivia data, introducing filters and favorites for a tailored   experience.
 - Deployment: Used Vercel to bring the app online, making sure it looks good on devices of all sizes.
 - PropTypes: Added an extra layer of reliability by ensuring consistent data flow between components.
-
-**Hurdles Overcome**:
 
 <h4>
   <img src="https://github.com/Sulton88Mehron90/Rock-Paper-Scissors/blob/main/src/parvin_round_transparent.png" 
