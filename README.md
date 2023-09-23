@@ -1,30 +1,40 @@
 <div>
     <h1 style="color:red; display: inline;">
       Avicenna Method
-         <img src="https://github.com/Sulton88Mehron90/showcase-project/blob/main/src/Images/name.jpg" alt="Parvin's Image" width="120" style="margin: 20px; border-radius: 50%;">
+         <img src="https://github.com/Sulton88Mehron90/showcase-project/blob/main/src/Images/name.jpg" alt="Avicenna's Name" width="120" style="margin-left: 5px; border-radius: 50%; vertical-align: middle;">
     </h1>
 </div>
- 
-### 🔖 Description
-Avicenna Method is a dynamic and interactive trivia application designed to challenge and engage users with a variety of questions across multiple categories. Named after the esteemed polymath Avicenna (Ibn Sina), this app embodies the spirit of curiosity and the thirst for knowledge.
-
-Whether you're a trivia enthusiast or just someone looking to test your knowledge in diverse fields, Avicenna Method provides a tailored experience. Users can select from a range of categories, ensuring a personalized quiz session each time. With a sleek design and intuitive user interface, Avicenna Method ensures a seamless experience from start to finish.
-
-Test your wits, learn something new, and embark on a journey of knowledge with Avicenna Method!
 
 
----
-### 👁️‍🗨️ Preview of App
+Dive into a world of curiosity with **Avicenna Method**! Named after the legendary polymath Avicenna (Ibn Sina), this trivia application is designed for those who seek a delightful blend of challenge and learning.
+
+## 📌 Description
+
+**Avicenna Method** offers trivia enthusiasts and casual learners a chance to test and expand their knowledge across diverse categories. With a focus on a seamless user experience, our app lets users tailor their quiz sessions and discover new facts in an engaging manner.
+
+## 🚀 Live Demo
+
+Experience the joy of learning. [Engage with Avicenna Method](https://showcase-project-khaki.vercel.app/).
+
+## Features
+
+- **Dynamic Quiz Generation**: Choose your preferred category and set the number of questions.
+- **Flashcard Interaction**: Click to flip and reveal the answers.
+
+### Preview of App
 <!-- ![Avicenna Method](https://github.com/Sulton88Mehron90/rancid-tomatillos-denzel-parvin/blob/main/src/images/Rancid-Tomatillos.gif) -->
 
---- 
-### 🌐 Live Demo
+## Technologies
 
-[Open the app here](https://showcase-project-khaki.vercel.app/)
+**Avicenna Method** is built using a blend of modern web technologies:
 
----
+- **React**: For dynamic UI components.
+- **JavaScript**: Powering the app's interactivity.
+- **HTML5 & CSS3**: Structuring and styling the application.
+- **Node.js**: Backing the app infrastructure.
+- **Cypress**: Ensuring reliability through end-to-end testing.
 
-### 🧱 Technologies Used 
+### Technologies Used 
 
 <div>  
   <a href="https://www.javascript.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="50" /></a>  
@@ -36,79 +46,61 @@ Test your wits, learn something new, and embark on a journey of knowledge with A
   <a href="https://docs.cypress.io/guides/overview/why-cypress" target="_blank"><img style="margin: 10px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoXfntUBC8eXPGA7V8dQp74I5Xofeze3tnRua5hKQkd0ofyH0cy5mJm3_Y-zPhHO2ty9k&usqp=CAU" alt="Cypress" height="50" /></a>  
 </div>
 
----
+## Setup & Installation
 
-### 🕹️ Installation & Setup 
+Get **Avicenna Method** running on your machine:
 
-- Clone this repository to your local machine using the command: `git clone git@github.com:Sulton88Mehron90/showcase-project.git`
-- Run the command: `cd showcase-project`
-- Run the command: `npm install`
-- Run the command: `npm start`
+1. Clone the repository: `git clone git@github.com:Sulton88Mehron90/showcase-project.git`
+2. Move to the project directory: `cd showcase-project`
+3. Grab the dependencies: `npm install`
+4. Fire up the app: `npm start`
 
----
+## Learning Highlights
 
-### 🌱 Learning Goals
+- Deepened understanding of **React** and its capabilities in building scalable applications.
+- Delved into **Cypress**, navigating its complexities to ensure reliable testing.
+- Successfully integrated with the Open Trivia Database API, bringing dynamic data to our quizzes.
+- Embraced challenges, especially in crafting a user-centric multi-page experience with **React Router**.
 
-The primary objectives of this project are as follows:
+## Contributor
 
-### React Fundamentals
-- Gain a strong competency in React fundamentals and apply these skills to create an effective, functional, and user-friendly application.
+Meet the developer behind **Avicenna Method**:
 
-### Testing with Cypress
-- Achieve proficiency in writing reliable tests for React components and asynchronous JavaScript functions using Cypress for end-to-end testing.
-
-### Code Refactoring and Quality
-- Engage in regular code refactoring exercises to improve code quality, readability, maintainability, and overall performance.
-
-### Multi-Page User Interface
-- Utilize React Router to design a multi-page user experience with seamless navigation, dynamic routing, and conditional rendering.
-
-### API Integration and Data Handling
-- Learn to integrate APIs to fetch data, handle network requests efficiently, manage state, and implement error-handling mechanisms.
-
----
-
-### 🤝🏼 Contributors
-
-<table>
-    <tr>
-        <td> Parvin A. Sattorova 
-            <a href="https://www.linkedin.com/in/parvin-sattorova-edwards-357526b3/">LinkedIn</a> || 
-            <a href="https://github.com/Sulton88Mehron90">GitHub</a> 
-        </td>
-    </tr>
-    <tr>
-        <td><img src="https://avatars.githubusercontent.com/u/119267809?v=4" alt="GitHub Avatar" width="150"></td>
-    </tr>
-</table>
-
----
-
-### ✨ Context, Wins, and Challenges
-
-### Context
-HTML and CSS served as the building blocks for our app's sleek design and intuitive user experience. Their synergistic power contributed to the creation of an application that is both visually stunning and user-friendly.
-
-The integration of Cypress, an industry-standard testing framework, ensured that our application meets quality benchmarks. This enabled us to automate tests, guaranteeing that the app performs optimally across various browsers and devices.
-
- <h4>
-    <img src="https://github.com/Sulton88Mehron90/Rock-Paper-Scissors/blob/main/src/parvin_round_transparent.png" 
-         alt="Ibn Sino" 
-         style="width: 30px; margin-right: 10px; border: 2px solid rgb(11, 166, 52); border-radius: 50%; padding: 8px; transition: transform 0.3s ease, box-shadow 0.3s ease-in-out; transform-origin: right; vertical-align: middle;" />
-    Major Wins
-  </h4>
+**Parvin A. Sattorova**  
+- [LinkedIn](https://www.linkedin.com/in/parvin-sattorova-edwards-357526b3/)
+- [GitHub](https://github.com/Sulton88Mehron90)
   
-- Achieved a visually pleasing design for the app.
-- Successfully implemented search and dynamic trailer fetching for each movie.
+![Parvin's Image](https://avatars.githubusercontent.com/u/119267809?v=4)
+
+## Reflections
+The "Avicenna Method" project was both a challenge and a learning curve. Delving deeper into React, Router, and asynchronous JavaScript expanded my understanding of frontend development. E2E with Cypress highlighted the significance of thorough testing, and designing for a specific audience underscored the importance of user-centric development. Despite the hurdles, like complex error handling, each obstacle strengthened my resolve and skills as a budding developer.
+
+**Major Triumphs**:
+<h4>
+  <img src="https://github.com/Sulton88Mehron90/Rock-Paper-Scissors/blob/main/src/parvin_round_transparent.png" 
+       alt="Ibn Sino" 
+       style="width: 30px; margin-right: 10px; border: 2px solid rgb(11, 166, 52); border-radius: 50%; padding: 8px; transition: transform 0.3s ease, box-shadow 0.3s ease-in-out; transform-origin: right; vertical-align: middle;" />
+  Major Triumphs
+</h4>
+
+- React: Dived into React and built dynamic components, making the app come alive.
+- React Router: Introduced multiple views in the app, creating a seamless navigation experience for users.
+- Asynchronous JavaScript: Managed API requests smoothly, ensuring users receive fresh trivia questions on demand.
+- Cypress Testing: Got hands-on with Cypress, ensuring each part of the app worked perfectly.
+- User-Centric Approach: Designed with our audience in mind, using personas and user stories to guide the app's features.
+- Interactive Features: Allowed users to engage with trivia data, introducing filters and favorites for a tailored   experience.
+- Deployment: Used Vercel to bring the app online, making sure it looks good on devices of all sizes.
+- PropTypes: Added an extra layer of reliability by ensuring consistent data flow between components.
+
+**Hurdles Overcome**:
 
 <h4>
   <img src="https://github.com/Sulton88Mehron90/Rock-Paper-Scissors/blob/main/src/parvin_round_transparent.png" 
        alt="Ibn Sino" 
        style="width: 30px; margin-right: 10px; border: 2px solid rgb(11, 166, 52); border-radius: 50%; padding: 8px; transition: transform 0.3s ease, box-shadow 0.3s ease-in-out; transform-origin: right; vertical-align: middle;" />
-  Challenges
+  Hurdles Overcome
 </h4>
 
-- Conducting end-to-end testing using Cypress posed some hurdles.
-- Implementing robust error handling was a complex but necessary part of the project.
-
----
+- Grappling with Cypress: Dived deep to achieve comprehensive end-to-end testing.
+- Error Handling Challenges: Faced complexities in error propagation, which added intricacies to the Cypress testing process.
+- Ensuring Smooth User Experience: Despite challenges, implemented precise error handling to ensure users enjoy uninterrupted sessions.

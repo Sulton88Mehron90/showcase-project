@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, Navigate, useNavigate } from 'react-router-dom';
+import { getTrivia, getCategories } from '../../ApiCalls';
 import FlashcardContainer from '../FlashcardContainer/FlashcardContainer';
 import HomePage from '../HomePage/HomePage';
-import { getTrivia, getCategories } from '../../ApiCalls';
 import '../Flashcard/Flashcard.css'
 import Error404 from '../ErrorHandling/Error404'
 import Error500 from '../ErrorHandling/Error500'
@@ -78,9 +78,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/404" element={<Error404 />} />
         <Route path="/500" element={<Error500 />} />
-        <Route path="/test-500" element={<Error500 />} />
         <Route path="/error" element={<Errors error={error} setError={setError} setTriviaLoading={setTriviaLoading} />} />
-
         <Route
           path="/flashcards"
           element={
