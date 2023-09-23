@@ -1,8 +1,6 @@
 const selectedCategory = 'Sports';
 const numberOfQuestions = 10;
 
-// https://opentdb.com/api.php?amount=50&type=multiple&encode=url3986
-
 describe('Flashcard Page', () => {
   beforeEach(() => {
     cy.intercept('GET', 'https://opentdb.com/api.php*', {
@@ -74,5 +72,17 @@ describe('Flashcard Page - Sad Path', () => {
     
     cy.visit('http://localhost:3000/flashcards');
     cy.url().should('include', '/500');
+  });
+
+  it('should handle non-existent routes gracefully', () => {
+    cy.visit('http://localhost:3000/flashcards/non-existent-route');
+    cy.url().should('eq', 'http://localhost:3000/404');
+    cy.contains('404 - Page Not Found').should('be.visible');
+  });
+
+  it('Should display appropriate error message at /error', () => {
+    cy.visit('http://localhost:3000/error');
+    cy.get('img').should('be.visible'); 
+    cy.get('h1').should('be.visible'); 
   });
 })

@@ -5,16 +5,6 @@ describe('Error Handling', () => {
     });
     cy.visit('http://localhost:3000/flashcards');
     cy.url().should('include', '/500');
-
-    // cy.visit('http://localhost:3000/');
-    // cy.contains('500 - Internal Server Error').should('be.visible');
-    // cy.contains("Oops! Something went wrong on our end.").should('be.visible');
-    // cy.get('.go-home-button').should('be.visible');
-
-    // cy.visit('http://localhost:3000/flashcards');
-    // cy.contains('500 - Internal Server Error').should('be.visible');
-    // cy.contains("Oops! Something went wrong on our end.").should('be.visible');
-    // cy.get('.go-home-button').should('be.visible');
   });
 
   it('should display a 404 error message when the page is not found', () => {
