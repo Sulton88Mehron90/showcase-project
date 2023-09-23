@@ -20,7 +20,7 @@ const HomePage = () => (
    className="styled-anchor button">Learn More About Avicenna</a>
    <p className="home-page-paragraph">
       On a separate note, I used flashcards to entertain my grandson during long-distance video calls in the COVID era. Flashcards can be a versatile and engaging tool for all ages.
-      <a href="https://youtu.be/qi4ZWeD4bLk?si=peLVf6tN1-ShiaPy" target="_blank" rel="noopener noreferrer" className="styled-anchor">For a fun video, check out our entertaining flashcard session on YouTube, featuring Pamiri song audio in the background. Be warned – it could be loud!</a>
+      <a href="https://youtu.be/qi4ZWeD4bLk?si=peLVf6tN1-ShiaPy" target="_blank" rel="noopener noreferrer" className="styled-anchor">For a fun video, check out our entertaining flashcard session on YouTube, featuring Pomiri song audio in the background. Be warned – it could be loud!</a>
     </p>
   </div>
 );
