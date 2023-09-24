@@ -12,17 +12,26 @@ Dive into a world of curiosity with **Avicenna Method**! Named after the legenda
 
 **Avicenna Method** offers trivia enthusiasts and casual learners a chance to test and expand their knowledge across diverse categories. With a focus on a seamless user experience, app lets users tailor their quiz sessions and discover new facts in an engaging manner.
 
+<img width="504" alt="image" src="https://github.com/Sulton88Mehron90/showcase-project/assets/119267809/07d2bf4c-0b57-42b3-8254-56e133f377a3">
+
 ### <span style="color:#2E8B57;">Live Demo</span>
 
 Experience the joy of learning. [Engage with Avicenna Method](https://showcase-project-khaki.vercel.app/).
+
+<img width="504" alt="image" src="https://github.com/Sulton88Mehron90/showcase-project/assets/119267809/11311fac-e5a5-4ee8-aa0c-f1008cb1ad03">
 
 ### <span style="color:#2E8B57;">Features</span>
 
 - **Dynamic Quiz Generation**: Choose your preferred category and set the number of questions.
 - **Flashcard Interaction**: Click to flip and reveal the answers.
 
+<img width="504" alt="image" src="https://github.com/Sulton88Mehron90/showcase-project/assets/119267809/ed99f7c3-67db-4b94-b607-0b2856770eb1">
+
+
 ### <span style="color:#2E8B57;">Preview of App</span>
 ![Avicenna Method](https://github.com/Sulton88Mehron90/showcase-project/blob/main/src/Images/ibn-sino-parvin.gif)
+
+<img width="504" alt="image" src="https://github.com/Sulton88Mehron90/showcase-project/assets/119267809/b3c82159-82b5-4ba6-bae0-f26675c94957">
 
 ### <span style="color:#2E8B57;">Technologies:</span>
 
@@ -37,6 +46,7 @@ Experience the joy of learning. [Engage with Avicenna Method](https://showcase-p
   <a href="https://docs.cypress.io/guides/overview/why-cypress" target="_blank"><img style="margin: 10px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoXfntUBC8eXPGA7V8dQp74I5Xofeze3tnRua5hKQkd0ofyH0cy5mJm3_Y-zPhHO2ty9k&usqp=CAU" alt="Cypress" height="50" /></a>  
 </div>
 
+<img width="504" alt="image" src="https://github.com/Sulton88Mehron90/showcase-project/assets/119267809/7b5f262b-9ed5-4594-acb2-5e71efe3c2ff">
 
 ### <span style="color:#2E8B57;">Setup & Installation</span>
 
@@ -47,6 +57,7 @@ Get **Avicenna Method** running on your machine:
 3. Grab the dependencies: `npm install`
 4. Fire up the app: `npm start`
 
+<img width="504" alt="image" src="https://github.com/Sulton88Mehron90/showcase-project/assets/119267809/abbf0809-d7de-43fa-b2be-a7d1ac2a4fb1">
 
 ### <span style="color:#2E8B57;">Learning Highlights</span>
 
@@ -55,6 +66,7 @@ Get **Avicenna Method** running on your machine:
 - Successfully integrated with the Open Trivia Database API, bringing dynamic data to our quizzes.
 - Embraced challenges, especially in crafting a user-centric multi-page experience with **React Router**.
 
+<img width="504" alt="image" src="https://github.com/Sulton88Mehron90/showcase-project/assets/119267809/4d3bd651-f26c-45fc-8994-d1e81f47cee2">
 
 ### <span style="color:#2E8B57;">Contributor</span>
 
@@ -71,7 +83,7 @@ Meet the developer behind **Avicenna Method**:
     </tr>
 </table>
 
-
+<img width="504" alt="image" src="https://github.com/Sulton88Mehron90/showcase-project/assets/119267809/d07cdccf-01dc-4aad-ab97-143def51d789">
 
 ### <span style="color:#2E8B57;">Reflections</span>
 The "Avicenna Method" project was both a challenge and a learning curve. Delving deeper into React, Router, and asynchronous JavaScript expanded my understanding of frontend development. E2E with Cypress highlighted the significance of thorough testing, and designing for a specific audience underscored the importance of user-centric development. Despite the hurdles, like complex error handling, each obstacle strengthened my resolve and skills as a budding developer.
