@@ -29,7 +29,7 @@ Experience the joy of learning. [Engage with Avicenna Method](https://showcase-p
 
 
 ### <span style="color:#2E8B57;">Preview of App</span>
-![Avicenna Method](https://github.com/Sulton88Mehron90/showcase-project/blob/main/src/Images/ibn-sino-parvin.gif)
+![Avicenna Method](https://github.com/Sulton88Mehron90/showcase-project/blob/main/src/Images/avicenna-method-romjon.gif)
 
 <img width="504" alt="image" src="https://github.com/Sulton88Mehron90/showcase-project/assets/119267809/b3c82159-82b5-4ba6-bae0-f26675c94957">
 
